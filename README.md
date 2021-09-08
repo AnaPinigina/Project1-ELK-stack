@@ -1,20 +1,20 @@
 # Project1-ELK-stack
 The files in this repository were used to configure the network depicted below.
 
-Diagrams/Project1.png `<https://github.com/AnaPinigina/Project1-ELK-stack/blob/57f9ec43bd8cbeb2453babd5d3d529112eaee732/Diagrams/Project1.png>`
+![Diagrams/Project1.png] (https://github.com/AnaPinigina/Project1-ELK-stack/blob/57f9ec43bd8cbeb2453babd5d3d529112eaee732/Diagrams/Project1.png)
 
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the YAML file may be used to install only certain pieces of it, such as Filebeat.
 
 [Ansible/Filebeat.yml] (https://github.com/AnaPinigina/Project1-ELK-stack/blob/57f9ec43bd8cbeb2453babd5d3d529112eaee732/Ansible/Filebeat.yml)
 
->---
->- name: Installing and Launching Filebeat
->  hosts: webservers
->  become: yes
->  tasks:
->
-> - name: Download filebeat .deb file
+---
+- name: Installing and Launching Filebeat
+  hosts: webservers
+  become: yes
+  tasks:
+
+ - name: Download filebeat .deb file
     command: curl -L -O https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-7.6.1-amd64.deb
 
   - name: Install filebeat .deb
@@ -50,8 +50,8 @@ This document contains the following details:
 
 
 Description of the Topology
-The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
-Load balancing ensures that the application will be highly _____, in addition to restricting _____ to the network.
+The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the Dmn Vulnerable Web Application.
+Load balancing ensures that the application will be highly available, in addition to restricting in-bound access to the network.
 
 TODO: What aspect of security do load balancers protect? What is the advantage of a jump box?
 
