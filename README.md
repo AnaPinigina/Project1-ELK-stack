@@ -82,18 +82,18 @@ The main purpose of this network is to expose a load-balanced and monitored inst
 Load balancing ensures that the application will be highly available, in addition to restricting in-bound access to the network.
 
 What aspect of security do load balancers protect?
-**A load balancer intelligently distributes traffic from clients across multiple servers without the clients having to understand how many servers are in use or how they are configured. Because the load balancer sits between the clients and the servers it can enhance the user experience by providing additional security, performance, resilience and simplify scaling your website.
+**A load balancer intelligently distributes traffic from clients across multiple servers without the clients having to understand how many servers are in use or how they are configured. Because the load balancer sits between the clients and the servers it can enhance the user experience by providing additional security, performance, resilience and simplify scaling your website.**
 
 What is the advantage of a jump box?
-**A jump box is a system set up with multi-factor authentication (MFA) usually placed in a network DMZ with very restricted access to the corporate network and no returning Internet access for any protocol. In other words, the jump box has only one path in via SSH, and no other protocols are allowed outbound to the Internet or into the corporate network.
+**A jump box is a system set up with multi-factor authentication (MFA) usually placed in a network DMZ with very restricted access to the corporate network and no returning Internet access for any protocol. In other words, the jump box has only one path in via SSH, and no other protocols are allowed outbound to the Internet or into the corporate network.**
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the jump box and system network.
 
 What does Filebeat watch for?
-**Filebeat monitors the log files or locations being specified, collects log events, and forwards them either to Elasticsearch or Logstash for indexing
+**Filebeat monitors the log files or locations being specified, collects log events, and forwards them either to Elasticsearch or Logstash for indexing.**
 
 What does Metricbeat record?
-**Metricbeat takes the metrics and statistics that it collects and ships them to the output that you specify, such as Elasticsearch or Logstash.
+**Metricbeat takes the metrics and statistics that it collects and ships them to the output that you specify, such as Elasticsearch or Logstash.**
 
 The configuration details of each machine may be found below.
 Note: Use the Markdown Table Generator to add/remove values from the table.
