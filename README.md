@@ -108,9 +108,13 @@ The following screenshot displays the result of running docker ps after successf
 
 
 ## Target Machines & Beats
-This ELK server is configured to monitor the following machines:
+This ELK server is configured to monitor the following machines: private IPs of Web-1 and Web-2
 
-TODO: List the IP addresses of the machines you are monitoring
+Name | IP Address
+-----|-----------
+Web-1 | 10.0.0.6
+Web-2 | 10.0.0.7
+
 
 We have installed the following Beats on these machines:
 
@@ -123,9 +127,11 @@ These Beats allow us to collect the following information from each machine:
 
 ## Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned:
+
 SSH into the control node and follow the steps below:
 
-Copy the _____ file to _____.
+Copy the playbook file to Ansible control node.
+
 Update the _____ file to include...
 Run the playbook, and navigate to ____ to check that the installation worked as expected.
 
