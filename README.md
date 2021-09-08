@@ -191,6 +191,7 @@ SSH into the control node and follow the steps below:
 
 * Update the hosts file to include webservers and elk.
 * Run the playbook, and navigate to [Kibana](http://20.105.192.121:5601/app/kibana#/home) to check that the installation worked as expected.
+http://[Host IP]/app/kibana#/home
 ```
  $ ansible-playbook install-elk.yml elk
  $ ansible-playbook filebeat-playbook.yml webservers
@@ -203,8 +204,19 @@ SSH into the control node and follow the steps below:
 
 
 
-TODO: Answer the following questions to fill in the blanks:
+Answer the following questions to fill in the blanks:
 
 Which file is the playbook? Where do you copy it?
-Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?
-_Which URL do you navigate to in order to check that the ELK server is running?
+.YML files in roles directory : /etc/ansible/roles
+![roles_yml](https://user-images.githubusercontent.com/47455752/132574699-ca90a673-ccbd-407a-abf4-2a6af7963c0c.png)
+[Ansible/Filebeat.yml](https://github.com/AnaPinigina/Project1-ELK-stack/blob/ffe98578f7bda21c538a95d653328865136be7b3/Ansible/Filebeat.yml)
+[Ansible/metricbeat.yml](https://github.com/AnaPinigina/Project1-ELK-stack/blob/378367788c62786b2050dc3bc34993f59ddc5bde/Ansible/metricbeat.yml)
+
+
+How do I specify which machine to install the ELK server on versus which to install Filebeat on?
+![ELK_hosts](https://user-images.githubusercontent.com/47455752/132574590-c129d47f-c2a3-4e90-9050-3fa290eb0e49.png)
+![filebeat_webservers](https://user-images.githubusercontent.com/47455752/132574609-1df1efbd-15a3-43f7-bb26-e2ba5c74d06b.png)
+
+
+Which URL do you navigate to in order to check that the ELK server is running?
+* http://20.105.192.121:5601/app/kibana#/home
