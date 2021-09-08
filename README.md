@@ -3,8 +3,8 @@
 
 The files in this repository were used to configure the network depicted below.
 
+![Diagrams/Project1.png](https://github.com/AnaPinigina/Project1-ELK-stack/blob/5eedb0fd1d8f784afb4c3668bd88e37d5e43f377/Diagrams/Project1.png)
 
-![Project1](https://user-images.githubusercontent.com/47455752/132553868-2f464afb-227e-496b-b277-b50aa6d7b35f.png)
 
 
 
