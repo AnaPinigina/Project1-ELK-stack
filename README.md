@@ -81,7 +81,7 @@ Description of the Topology
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D\\*mn Vulnerable Web Application.
 Load balancing ensures that the application will be highly available, in addition to restricting in-bound access to the network.
 
-What aspect of security do load balancers protect? 
+What aspect of security do load balancers protect?
 **A load balancer intelligently distributes traffic from clients across multiple servers without the clients having to understand how many servers are in use or how they are configured. Because the load balancer sits between the clients and the servers it can enhance the user experience by providing additional security, performance, resilience and simplify scaling your website.
 
 What is the advantage of a jump box?
