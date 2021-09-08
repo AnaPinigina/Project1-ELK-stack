@@ -1,4 +1,6 @@
 # Project1-ELK-stack
+## Automated ELK Stack Deployment
+
 The files in this repository were used to configure the network depicted below.
 
 ![Diagrams/Project1.png] (https://github.com/AnaPinigina/Project1-ELK-stack/blob/57f9ec43bd8cbeb2453babd5d3d529112eaee732/Diagrams/Project1.png)
@@ -43,7 +45,7 @@ These files have been tested and used to generate a live ELK deployment on Azure
 
 This document contains the following details:
 
-* Description of the Topology
+## Description of the Topology
 * Access Policies
 * ELK Configuration
   * Beats in Use
@@ -55,91 +57,57 @@ Description of the Topology
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D\\*mn Vulnerable Web Application.
 Load balancing ensures that the application will be highly available, in addition to restricting in-bound access to the network.
 
-TODO: What aspect of security do load balancers protect? What is the advantage of a jump box?
+What aspect of security do load balancers protect? 
+**A load balancer intelligently distributes traffic from clients across multiple servers without the clients having to understand how many servers are in use or how they are configured. Because the load balancer sits between the clients and the servers it can enhance the user experience by providing additional security, performance, resilience and simplify scaling your website.
 
-Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the _____ and system _____.
+What is the advantage of a jump box?
+**A jump box is a secure computer that all admins first connect to before launching any administrative task or use as an origination point to connect to other servers or untrusted environments.
 
-TODO: What does Filebeat watch for?
-TODO: What does Metricbeat record?
+Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the jump box and system network.
+
+What does Filebeat watch for?
+**Filebeat monitors the log files or locations being specified, collects log events, and forwards them either to Elasticsearch or Logstash for indexing
+
+What does Metricbeat record?
+**Metricbeat takes the metrics and statistics that it collects and ships them to the output that you specify, such as Elasticsearch or Logstash.
 
 The configuration details of each machine may be found below.
 Note: Use the Markdown Table Generator to add/remove values from the table.
 
 
 
-Name
-Function
-IP Address
-Operating System
+Name | Function | IP Address | Operating System
+-----|----------|------------|-----------------
+Jump Box | Gateway | 10.0.0.5 | Linux
+Web-1 | Webserver | 10.0.0.6 | Linux
+Web-2 | Webserver | 10.0.0.7 | Linux
+ELK | Monitoring | 10.1.0.4 | Linux
 
 
-
-
-Jump Box
-Gateway
-10.0.0.1
-Linux
-
-
-TODO
-
-
-
-
-
-TODO
-
-
-
-
-
-TODO
-
-
-
-
-
-
-
-Access Policies
+## Access Policies
 The machines on the internal network are not exposed to the public Internet.
-Only the _____ machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
+Only the jump box provisioner machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
 
-TODO: Add whitelisted IP addresses
+* 5061 Kibana Port
 
-Machines within the network can only be accessed by _____.
+Machines within the network can only be accessed by jump box provisioner.
 
-TODO: Which machine did you allow to access your ELK VM? What was its IP address?
+Which machine did you allow to access your ELK VM? What was its IP address?
+* My IP Address: 76.97.21.219
 
 A summary of the access policies in place can be found in the table below.
 
 
 
-Name
-Publicly Accessible
-Allowed IP Addresses
+Name | Publicly Accessible | Allowed IP Addresses
+-----|---------------------|---------------------
+Jump Box | Yes | 76.97.21.219
+Web-1 | No | 10.1.0.4 
+Web-2 | No| 10.1.0.4 
+ELK | No | 10.1.0.4
 
 
-
-
-Jump Box
-Yes/No
-10.0.0.1 10.0.0.2
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Elk Configuration
+## Elk Configuration
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
 
 TODO: What is the main advantage of automating configuration with Ansible?
