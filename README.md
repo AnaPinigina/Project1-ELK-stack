@@ -1,7 +1,9 @@
 # Project1-ELK-stack
 ## Automated ELK Stack Deployment
 
-The files in this repository were used to configure the network depicted below.[Filebeat1.txt](https://github.com/AnaPinigina/Project1-ELK-stack/files/7130628/Filebeat1.txt)
+The files in this repository were used to configure the network depicted below.
+![Project1](https://user-images.githubusercontent.com/47455752/132553868-2f464afb-227e-496b-b277-b50aa6d7b35f.png)
+
 
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the YAML file may be used to install only certain pieces of it, such as Filebeat.
