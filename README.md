@@ -135,16 +135,16 @@ ELK | No | 10.1.0.4
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
 
 What is the main advantage of automating configuration with Ansible?
-**1. Agentless –There are no agents or software deployed on the clients/servers to work with Ansible. The connection can be done through the SSH or using the Python.
-**2. English Like Language – To use the Ansible, configure, and deploy the infrastructure is very simple and it is English like the language used called YAML.
-**3. Modular – The Ansible uses modules to automate, configure, deploy, and orchestrate the IT Infrastructure. There are around 750 + modules built-in Ansible.
-**4. Efficient – There are no servers, daemons, or databases required for Ansible to work.
-**5. Features – Ansible comes with a whole lot of features and can be used to manage the Operating systems, IT Infrastructure, the networks, the servers, and services in very less time.
-**6. Secure and consistent – Since the Ansible uses SSH and Python it is very secure and the operations are flawless.
-**7. Reliable – The Ansible Playbook can be used to write programs or the modules and can be used to manage the IT without any downside.
-**8. Performance- The Ansible’s performance is excellent and has very little latency.
-**9. Low Overhead – As it is agentless and does not require any servers, daemons, or databases it can provide a lot of space in the systems and has low overhead in terms of deployment.
-**10. Simple – It is very simple to use and is supported by YAML** 
+1. Agentless –There are no agents or software deployed on the clients/servers to work with Ansible. The connection can be done through the SSH or using the Python.
+2. English Like Language – To use the Ansible, configure, and deploy the infrastructure is very simple and it is English like the language used called YAML.
+3. Modular – The Ansible uses modules to automate, configure, deploy, and orchestrate the IT Infrastructure. There are around 750 + modules built-in Ansible.
+4. Efficient – There are no servers, daemons, or databases required for Ansible to work.
+5. Features – Ansible comes with a whole lot of features and can be used to manage the Operating systems, IT Infrastructure, the networks, the servers, and services in very less time.
+6. Secure and consistent – Since the Ansible uses SSH and Python it is very secure and the operations are flawless.
+7. Reliable – The Ansible Playbook can be used to write programs or the modules and can be used to manage the IT without any downside.
+8. Performance- The Ansible’s performance is excellent and has very little latency.
+9. Low Overhead – As it is agentless and does not require any servers, daemons, or databases it can provide a lot of space in the systems and has low overhead in terms of deployment.
+10. Simple – It is very simple to use and is supported by YAML. 
 
 The playbook implements the following tasks:
 
