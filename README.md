@@ -1,8 +1,8 @@
 # Project1-ELK-stack
 The files in this repository were used to configure the network depicted below.
 
-Diagrams/Project1.png
-https://github.com/AnaPinigina/Project1-ELK-stack/blob/57f9ec43bd8cbeb2453babd5d3d529112eaee732/Diagrams/Project1.png
+Diagrams/Project1.png (https://github.com/AnaPinigina/Project1-ELK-stack/blob/57f9ec43bd8cbeb2453babd5d3d529112eaee732/Diagrams/Project1.png)
+
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the YAML file may be used to install only certain pieces of it, such as Filebeat.
 
@@ -42,15 +42,12 @@ https://github.com/AnaPinigina/Project1-ELK-stack/blob/57f9ec43bd8cbeb2453babd5d
 
 This document contains the following details:
 
-Description of the Topology
-Access Policies
-ELK Configuration
-
-Beats in Use
-Machines Being Monitored
-
-
-How to Use the Ansible Build
+* Description of the Topology
+* Access Policies
+* ELK Configuration
+  * Beats in Use
+  * Machines Being Monitored
+* How to Use the Ansible Build
 
 
 Description of the Topology
