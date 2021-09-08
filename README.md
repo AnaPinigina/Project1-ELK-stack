@@ -85,7 +85,7 @@ What aspect of security do load balancers protect?
 **A load balancer intelligently distributes traffic from clients across multiple servers without the clients having to understand how many servers are in use or how they are configured. Because the load balancer sits between the clients and the servers it can enhance the user experience by providing additional security, performance, resilience and simplify scaling your website.
 
 What is the advantage of a jump box?
-**A jump box is a secure computer that all admins first connect to before launching any administrative task or use as an origination point to connect to other servers or untrusted environments.
+**A jump box is a system set up with multi-factor authentication (MFA) usually placed in a network DMZ with very restricted access to the corporate network and no returning Internet access for any protocol. In other words, the jump box has only one path in via SSH, and no other protocols are allowed outbound to the Internet or into the corporate network.
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the jump box and system network.
 
@@ -112,7 +112,7 @@ ELK | Monitoring | 10.1.0.4 | Linux
 The machines on the internal network are not exposed to the public Internet.
 Only the jump box provisioner machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
 
-* 5061 Kibana Port
+* 5601 Kibana Port
 
 Machines within the network can only be accessed by jump box provisioner.
 
