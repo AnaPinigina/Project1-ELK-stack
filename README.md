@@ -9,7 +9,7 @@ These files have been tested and used to generate a live ELK deployment on Azure
 [Ansible/Filebeat.yml] (https://github.com/AnaPinigina/Project1-ELK-stack/blob/57f9ec43bd8cbeb2453babd5d3d529112eaee732/Ansible/Filebeat.yml)
 
 ---
-- name: Installing and Launching Filebeat
+\\ - name: Installing and Launching Filebeat
   hosts: webservers
   become: yes
   tasks:
@@ -50,7 +50,7 @@ This document contains the following details:
 
 
 Description of the Topology
-The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the Dmn Vulnerable Web Application.
+The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D\\*mn Vulnerable Web Application.
 Load balancing ensures that the application will be highly available, in addition to restricting in-bound access to the network.
 
 TODO: What aspect of security do load balancers protect? What is the advantage of a jump box?
