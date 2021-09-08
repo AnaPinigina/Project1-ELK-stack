@@ -122,8 +122,8 @@ We have installed the following Beats on these machines:
 
 These Beats allow us to collect the following information from each machine:
 
-* Filebeat - collects data about the file system
-* Metricbeat - collects machine metrics, such as uptime
+* Filebeat monitors the log files or locations that you specify, collects log events, and forwards them either to Elasticsearch or Logstash for indexing.
+* Metricbeat takes the metrics and statistics that it collects and ships them to the output that you specify, such as Elasticsearch or Logstash.
 
 ## Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned:
@@ -132,8 +132,11 @@ SSH into the control node and follow the steps below:
 
 Copy the playbook file to Ansible control node.
 
-Update the _____ file to include...
-Run the playbook, and navigate to ____ to check that the installation worked as expected.
+Update the hosts file to include webservers and elk.
+Run the playbook, and navigate to Kibana (http://20.105.192.121/app/kibana#/home) to check that the installation worked as expected.
+![kibanaebana](https://user-images.githubusercontent.com/47455752/132563065-b1c8d122-b2af-448d-8701-ca3ae3bb990a.png)
+
+
 
 TODO: Answer the following questions to fill in the blanks:
 
