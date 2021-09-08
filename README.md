@@ -104,7 +104,8 @@ TODO: In 3-5 bullets, explain the steps of the ELK installation play. E.g., inst
 
 The following screenshot displays the result of running docker ps after successfully configuring the ELK instance.
 
-![sebp-elk](https://user-images.githubusercontent.com/47455752/132552650-f33abbdf-1b1c-4aa8-bf79-e385f32de8d0.png)
+![sebp-elk (2)](https://user-images.githubusercontent.com/47455752/132564827-0783f376-4384-4457-b074-513398c6ecea.png)
+
 
 
 ## Target Machines & Beats
