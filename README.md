@@ -157,6 +157,7 @@ TODO: In 3-5 bullets, explain the steps of the ELK installation play. E.g., inst
 
 The following screenshot displays the result of running docker ps after successfully configuring the ELK instance.
 
+
 ![sebp-elk (2)](https://user-images.githubusercontent.com/47455752/132564827-0783f376-4384-4457-b074-513398c6ecea.png)
 
 
@@ -190,6 +191,12 @@ SSH into the control node and follow the steps below:
 
 * Update the hosts file to include webservers and elk.
 * Run the playbook, and navigate to [Kibana](http://20.105.192.121:5601/app/kibana#/home) to check that the installation worked as expected.
+```
+ $ ansible-playbook install-elk.yml elk
+ $ ansible-playbook filebeat-playbook.yml webservers
+ $ ansible-playbook metricbeat-playbook.yml webservers
+ ```
+ 
 ![metricbeat_kibana](https://user-images.githubusercontent.com/47455752/132563933-cf4887ba-6e36-414a-8e70-005abdbe7740.png)
 ![filebeat_kibana](https://user-images.githubusercontent.com/47455752/132563938-e6a90f5f-6afd-4183-bc57-23da9ad88b2b.png)
 
