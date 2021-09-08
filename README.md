@@ -1,7 +1,7 @@
 # Project1-ELK-stack
 The files in this repository were used to configure the network depicted below.
 
-Diagrams/Project1.png (https://github.com/AnaPinigina/Project1-ELK-stack/blob/57f9ec43bd8cbeb2453babd5d3d529112eaee732/Diagrams/Project1.png)
+Diagrams/Project1.png `<https://github.com/AnaPinigina/Project1-ELK-stack/blob/57f9ec43bd8cbeb2453babd5d3d529112eaee732/Diagrams/Project1.png>`
 
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the YAML file may be used to install only certain pieces of it, such as Filebeat.
@@ -10,11 +10,11 @@ These files have been tested and used to generate a live ELK deployment on Azure
 
 >---
 >- name: Installing and Launching Filebeat
-  hosts: webservers
-  become: yes
-  tasks:
-
-  - name: Download filebeat .deb file
+>  hosts: webservers
+>  become: yes
+>  tasks:
+>
+> - name: Download filebeat .deb file
     command: curl -L -O https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-7.6.1-amd64.deb
 
   - name: Install filebeat .deb
