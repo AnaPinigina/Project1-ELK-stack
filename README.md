@@ -2,46 +2,14 @@
 ## Automated ELK Stack Deployment
 
 The files in this repository were used to configure the network depicted below.
+
+
 ![Project1](https://user-images.githubusercontent.com/47455752/132553868-2f464afb-227e-496b-b277-b50aa6d7b35f.png)
 
 
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the YAML file may be used to install only certain pieces of it, such as Filebeat.
 
-[Filebeat] (AnaPinigina/Project1-ELK-stack/blob/57f9ec43bd8cbeb2453babd5d3d529112eaee732/Ansible/Filebeat.yml)
-
-<block>
----
- - name: Installing and Launching Filebeat
-  hosts: webservers
-  become: yes
-  tasks:
-
- - name: Download filebeat .deb file
-    command: curl -L -O https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-7.6.1-amd64.deb
-
-  - name: Install filebeat .deb
-    command: dpkg -i filebeat-7.6.1-amd64.deb
-
-  - name: Drop in filebeat.yml
-    copy:
-      src: /etc/ansible/files/filebeat_config.yml
-      dest: /etc/filebeat/filebeat.yml
-
-  - name: Enable and Configure System Module
-    command: filebeat modules enable system
-
-  - name: Setup filebeat
-    command: filebeat setup
-
-  - name: Start filebeat service
-    command: service filebeat start
-
-  - name: Enable service filebeat on boot
-    systemd:
-      name: filebeat
-      enabled: yes
-</block>
 
 This document contains the following details:
 
