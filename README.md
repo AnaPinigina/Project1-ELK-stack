@@ -228,3 +228,5 @@ How do I specify which machine to install the ELK server on versus which to inst
 
 Which URL do you navigate to in order to check that the ELK server is running?
 * http://20.105.192.121:5601/app/kibana#/home
+*![kibanaebana (2)](https://user-images.githubusercontent.com/47455752/132579783-309b0564-5ed9-48a0-83c5-d17744edf1da.png)
+
