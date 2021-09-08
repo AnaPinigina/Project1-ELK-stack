@@ -8,8 +8,9 @@ These files have been tested and used to generate a live ELK deployment on Azure
 
 [Ansible/Filebeat.yml] (https://github.com/AnaPinigina/Project1-ELK-stack/blob/57f9ec43bd8cbeb2453babd5d3d529112eaee732/Ansible/Filebeat.yml)
 
+<block>
 ---
-\\ - name: Installing and Launching Filebeat
+ - name: Installing and Launching Filebeat
   hosts: webservers
   become: yes
   tasks:
@@ -38,6 +39,7 @@ These files have been tested and used to generate a live ELK deployment on Azure
     systemd:
       name: filebeat
       enabled: yes
+  </block>
 
 This document contains the following details:
 
