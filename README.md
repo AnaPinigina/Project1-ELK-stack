@@ -6,11 +6,10 @@ Diagrams/Project1.png (https://github.com/AnaPinigina/Project1-ELK-stack/blob/57
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the YAML file may be used to install only certain pieces of it, such as Filebeat.
 
-Ansible/Filebeat.yml
-https://github.com/AnaPinigina/Project1-ELK-stack/blob/57f9ec43bd8cbeb2453babd5d3d529112eaee732/Ansible/Filebeat.yml
+[Ansible/Filebeat.yml] (https://github.com/AnaPinigina/Project1-ELK-stack/blob/57f9ec43bd8cbeb2453babd5d3d529112eaee732/Ansible/Filebeat.yml)
 
----
-- name: Installing and Launching Filebeat
+>---
+>- name: Installing and Launching Filebeat
   hosts: webservers
   become: yes
   tasks:
