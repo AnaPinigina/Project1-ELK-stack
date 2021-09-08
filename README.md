@@ -186,6 +186,7 @@ In order to use the playbook, you will need to have an Ansible control node alre
 SSH into the control node and follow the steps below:
 
 * Copy the playbook file to Ansible control node.
+
 ![roles_yml](https://user-images.githubusercontent.com/47455752/132564235-148e9d12-9f35-4356-92e5-5680ad6bb997.png)
 
 
