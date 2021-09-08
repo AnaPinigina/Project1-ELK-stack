@@ -16,7 +16,7 @@ These files have been tested and used to generate a live ELK deployment on Azure
 # install_elk.yml
 - name: Configure Elk VM with Docker
   hosts: elk
-  remote_user: sysadmin
+  remote_user: azadmin
   become: true
   tasks:
     # Use apt module
