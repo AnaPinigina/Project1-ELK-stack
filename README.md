@@ -110,33 +110,47 @@ ELK | No | 10.1.0.4
 ## Elk Configuration
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
 
-TODO: What is the main advantage of automating configuration with Ansible?
+What is the main advantage of automating configuration with Ansible?
+1. Agentless –There are no agents or software deployed on the clients/servers to work with Ansible. The connection can be done through the SSH or using the Python.
+2. English Like Language – To use the Ansible, configure, and deploy the infrastructure is very simple and it is English like the language used called YAML.
+3. Modular – The Ansible uses modules to automate, configure, deploy, and orchestrate the IT Infrastructure. There are around 750 + modules built-in Ansible.
+4. Efficient – There are no servers, daemons, or databases required for Ansible to work.
+5. Features – Ansible comes with a whole lot of features and can be used to manage the Operating systems, IT Infrastructure, the networks, the servers, and services in very less time.
+6. Secure and consistent – Since the Ansible uses SSH and Python it is very secure and the operations are flawless.
+7. Reliable – The Ansible Playbook can be used to write programs or the modules and can be used to manage the IT without any downside.
+8. Performance- The Ansible’s performance is excellent and has very little latency.
+9. Low Overhead – As it is agentless and does not require any servers, daemons, or databases it can provide a lot of space in the systems and has low overhead in terms of deployment.
+10. Simple – It is very simple to use and is supported by YAML 
 
 The playbook implements the following tasks:
 
 TODO: In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc.
-...
-...
+* Install docker.io
+* Install pip3
+* Install Docker python module
+* Increase virtual memory
+* Download and launch a docker
 
 The following screenshot displays the result of running docker ps after successfully configuring the ELK instance.
-Note: The following image link needs to be updated. Replace docker_ps_output.png with the name of your screenshot image file.
+
+![sebp-elk](https://user-images.githubusercontent.com/47455752/132552650-f33abbdf-1b1c-4aa8-bf79-e385f32de8d0.png)
 
 
-Target Machines & Beats
+## Target Machines & Beats
 This ELK server is configured to monitor the following machines:
 
 TODO: List the IP addresses of the machines you are monitoring
 
 We have installed the following Beats on these machines:
 
-TODO: Specify which Beats you successfully installed
+* Microbeats
 
 These Beats allow us to collect the following information from each machine:
 
-TODO: In 1-2 sentences, explain what kind of data each beat collects, and provide 1 example of what you expect to see. E.g., Winlogbeat collects Windows logs, which we use to track user logon events, etc.
+* Filebeat - collects data about the file system
+* Metricbeat - collects machine metrics, such as uptime
 
-
-Using the Playbook
+## Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned:
 SSH into the control node and follow the steps below:
 
